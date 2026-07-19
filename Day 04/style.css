@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #0056b3; 
+    --text-color: #333333;
+    --bg-color: #ffffff;
+    --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+
+nav ul {
+    display: flex;
+     gap: 20px;
+    list-style: none;
+    
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+/* ==========================
+   DAY 4 - COMPONENT DESIGN
+========================== */
+
+/* Team Grid */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: #ffffff;
+    text-align: center;
+    max-width: 280px;
+    width: 100%;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Profile Image */
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top:20px;
+    margin-bottom: 15px;
+}
+
+/* Name */
+.profile-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+/* Role */
+.profile-card p {
+    font-size: 0.95rem;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.profile-card a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+/* Hover Effect */
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
