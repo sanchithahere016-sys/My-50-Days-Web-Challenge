@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>Community Platform | Day 08</title>
+    <title>Community Platform | Day 09</title>
     
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
 
 <header>
-    <nav>
+    <nav aria-label="Main Navigation">
         <h2>Community Platform</h2>
 
         <ul>
@@ -27,7 +29,7 @@
     </nav>
 </header>
 
-<main>
+<main id="main-content">
 
     <section class="hero-section">
         <h1>Empowering the Next Generation of Engineers</h1>
@@ -85,7 +87,8 @@
         <div class="team-grid">
             <div class="profile-card">
                 <img 
-                src="https://via.placeholder.com/120">
+                src="https://via.placeholder.com/150x150"
+                    alt="Portrait of Chief Strategic Officer Abhay Oberoi">
                 
                 <h3> Abhay Oberoi </h3>
                 <p>Chief Strategic Officer</p>
@@ -94,7 +97,8 @@
             </div>
             <div class="profile-card">
             <img 
-            src="https://via.placeholder.com/120"> 
+            src="https://via.placeholder.com/150x150"
+                alt="Portrait of Project Manager John Smith"> 
             
 
             <h3>John smith </h3>
@@ -105,7 +109,8 @@
             </div>
             <div class="profile-card">
             <img 
-            src="https://via.placeholder.com/120">
+            src="https://via.placeholder.com/150x150"
+                alt="Portrait of UI/UX Designer Alex Brown">
             
 
             <h3>Alex Brown</h3>
@@ -168,8 +173,11 @@
             placeholder="Write your message..."
         ></textarea>
 
-        <button type="submit">Join Community</button>
-
+        <button
+            type="submit"
+            aria-label="Submit Membership Application">
+            Join Community
+        </button>
     </form>
 </section>
 
@@ -177,7 +185,7 @@
 
     <p>&copy; 2026 Community Platform. All Rights Reserved.</p>
 
-    <nav>
+    <nav aria-label="Social Media Links">
         <a href="#">Instagram</a> |
         <a href="#">LinkedIn</a> |
         <a href="#">GitHub</a>
