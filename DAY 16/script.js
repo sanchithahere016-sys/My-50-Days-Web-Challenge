@@ -141,9 +141,7 @@ searchInput.addEventListener("input", function () {
     renderProjects(filteredProjects);
 
 });
-// -------------------------
-// DAY 16 - LOCAL STORAGE
-// -------------------------
+
 
 const fullNameInput = document.getElementById("fullName");
 const emailInput = document.getElementById("email");
@@ -151,7 +149,7 @@ const phoneInput = document.getElementById("phone");
 const interestInput = document.getElementById("interest");
 const messageInput = document.getElementById("message");
 
-// Restore saved data when page loads
+
 const savedData = localStorage.getItem("synexus_form_draft");
 
 if (savedData) {
@@ -164,7 +162,7 @@ if (savedData) {
     messageInput.value = formData.message || "";
 }
 
-// Save form data
+
 function saveFormData() {
 
     const formData = {
@@ -181,7 +179,7 @@ function saveFormData() {
     );
 }
 
-// Listen for changes
+
 fullNameInput.addEventListener("input", saveFormData);
 emailInput.addEventListener("input", saveFormData);
 phoneInput.addEventListener("input", saveFormData);
